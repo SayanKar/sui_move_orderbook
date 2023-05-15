@@ -1,3 +1,4 @@
+/// Reference: https://examples.sui.io/samples/coin.html 
 module kar::kar {
     use std::option;
     use sui::coin;
