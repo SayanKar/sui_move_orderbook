@@ -136,8 +136,11 @@ You can note down a few details here:
 
 * Look for Object created with `"type": String("published")` pick the objectId `0x10d55ea2889067afad342bce52e7fa95051ec0f389358baa80692a316c5ba0d5`. This is the package address note it down.
 
-* 
+* We have a shared object with property `"Shared": Object {"initial_shared_version": Number(35),},` and type `"objectType": String("0x10d55ea2889067afad342bce52e7fa95051ec0f389358baa80692a316c5ba0d5::orderbook::OrderBook")`, pick the objectId for this
+`0x39d3873d7c31215d3ba5c3818a84899c603d8ba92fcdb40735fe8ae5b1965b05` as this is the orderbook shared object storing the sell and buy orders.
 
-* Look for a Object with `"objectType": String("0x0000000000000000000000000000000000000000000000000000000000000002::coin::TreasuryCap<0x10d55ea2889067afad342bce52e7fa95051ec0f389358baa80692a316c5ba0d5::kar::KAR>")` and pick its objectId `0x8259bb879e943bc3faca6fb78ee00e5934c7b219a12f34e8874ba4dda3cb33a5`. This is the TreasuryCap Object which can be used to Mint KAR tokens and send to a address by passing treasuryCap along with other params to coin::mint_and_transfer.
+* Look for a Object with `"objectType":String("0x0000000000000000000000000000000000000000000000000000000000000002::coin::TreasuryCap<0x10d55ea2889067afad342bce52e7fa95051ec0f389358baa80692a316c5ba0d5::kar::KAR>")` and pick its objectId `0x8259bb879e943bc3faca6fb78ee00e5934c7b219a12f34e8874ba4dda3cb33a5`. This is the TreasuryCap Object which can be used to Mint KAR tokens and send to a address by passing treasuryCap along with other params to coin::mint_and_transfer.
 
+
+To interact with the orderbook use sui-cli or sui explorer, by putting the package address in search bar you get a interface to interact with the public entry functions.
 
