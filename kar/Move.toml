@@ -1,0 +1,10 @@
+[package]
+name = "kar"
+version = "0.0.1"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
+
+[addresses]
+kar = "0x0"
+published-at = "0x67a3ccdbff3355f5166869fae1f31717dc75ee3e71bd0767665deab48d42f4ca"
