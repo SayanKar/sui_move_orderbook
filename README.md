@@ -12,9 +12,10 @@ After setting up sui locally, clone the repo and move into orderbook package:
 git clone https://github.com/SayanKar/sui_move_orderbook.git
 cd sui_move_orderbook/orderbook
 ```
-To publish the package use the following command at the root folder of orderbook package:
+To build and publish the package use the following command at the root folder of orderbook package:
 
 ```bash
+sui move build
 sui client publish --gas {YOUR_GAS_OBJECT_ID} --gas-budget 100000000 --with-unpublished-dependencies
 ```
 
